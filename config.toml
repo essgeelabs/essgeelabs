@@ -1,0 +1,4 @@
+# baseURL = 'https://essgeelabs.com/'
+languageCode = 'en-us'
+title = 'EssGeeLabs Home Site'
+theme = "PaperMod"
