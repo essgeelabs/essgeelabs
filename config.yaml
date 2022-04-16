@@ -1,0 +1,125 @@
+baseURL: 'https://essgeelabs.com/'
+languageCode: en-us
+title: EssGeeLabs
+theme: PaperMod
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+menu:
+  main:
+    - identifier: personalwebsite
+      name: personal website
+      url: 'https://www.sachinganpat.com'
+      weight: 10
+    - identifier: businesswebsite
+      name: business website
+      url: 'https://www.interxect.com'
+      weight: 11
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 40
+params:
+  title: EssGeeLabs
+  description: Cool site for cool stuff.
+  keywords:
+    - Blog
+    - Projects
+    - Technology
+    - DevOps
+  author: Sachin Ganpat
+  DateFormat: 'January 2, 2006'
+  defaultTheme: light
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: > 
+      Welcome to the homepage of Ess Gee Labs.
+
+      - Here I'll be posting content on the things I do in the areas of: 
+
+      - • DevOps, DevSecOps and CyberSecurity
+
+      - • Machine Learning and Intelligence Aumentations
+
+      - • Internet of Things
+
+      - • Web Development and Programming in Python
+
+      - • And whatever else that piques my interest
+
+  socialIcons:
+    - name: twitter
+      url: 'https://twitter.com/sachin_ganpat'
+    - name: linkedin
+      url: 'https://www.linkedin.com/in/sganpat/'
+    - name: github
+      url: 'https://github.com/essgeelabs'
+    - name: RsS
+      url: 'index.xml'
+  assets:
+    favicon: /favicon.ico
+    favicon16x16: /favicon-16x16.png
+    favicon32x32: /favicon-32x32.png
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+
+taxonomies:
+  category: categories
+  tag: tags
+
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
