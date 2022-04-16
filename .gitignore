@@ -10,13 +10,13 @@ hugo.darwin
 hugo.linux
 
 # Temporary lock file while building
-/.hugo_build.lock
+.hugo_build.lock
 
 #OS
 .DS_Store
 
 # Ignore everything in the "content" directory,
-# statis and "themes" directories.
+# statics and "themes" directories.
 content/
 static/
 themes/
