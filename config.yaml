@@ -2,10 +2,13 @@ baseURL: 'https://essgeelabs.com/'
 languageCode: en-us
 title: Ess Gee Labs
 theme: PaperMod
+paginate: 5
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 outputs:
   home:
     - HTML
@@ -35,6 +38,7 @@ menu:
       weight: 40
 params:
   title: EssGeeLabs
+  env: production
   description: Cool site for cool stuff.
   keywords:
     - Blog
@@ -129,3 +133,7 @@ privacy:
   youtube:
     disabled: false
     privacyEnhanced: true
+
+minify:
+  disableXML: true
+
