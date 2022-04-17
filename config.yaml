@@ -1,6 +1,6 @@
 baseURL: 'https://essgeelabs.com/'
 languageCode: en-us
-title: EssGeeLabs
+title: Ess Gee Labs
 theme: PaperMod
 enableRobotsTXT: true
 buildDrafts: false
@@ -58,21 +58,22 @@ params:
   showtoc: false
   tocopen: false
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Welcome to the homepage of Ess Gee Labs"
     Content: > 
-      Welcome to the homepage of Ess Gee Labs.
-
+      
       - Here I'll be posting content on the things I do in the areas of: 
 
-      - • DevOps, DevSecOps and CyberSecurity
+      - &nbsp;&nbsp;• DevOps, DevSecOps and CyberSecurity
 
-      - • Machine Learning and Intelligence Aumentations
+      - &nbsp;&nbsp;• Network and Infrastructure Architectures
 
-      - • Internet of Things
+      - &nbsp;&nbsp;• Machine Learning and Intelligence Augmentation
 
-      - • Web Development and Programming in Python
+      - &nbsp;&nbsp;• Electronics and The Internet of Things
 
-      - • And whatever else that piques my interest
+      - &nbsp;&nbsp;• Web Development and Programming in Python
+
+      - &nbsp;&nbsp;• And whatever else that piques my interest
 
   socialIcons:
     - name: twitter
@@ -99,6 +100,11 @@ params:
       - permalink
       - summary
       - content
+      - author
+  cover:
+    # hidden: false 
+    hiddenInList: true 
+    hiddenInSingle: false 
 
 
 taxonomies:

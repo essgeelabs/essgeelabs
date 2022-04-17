@@ -17,6 +17,6 @@ hugo.linux
 
 # Ignore everything in the "content" directory,
 # statics and "themes" directories.
-content/
-static/
-themes/
+# content/
+# static/
+themes/PaperMod/
