@@ -7,7 +7,7 @@ categories:
 tags:
   - news
 author: ["Sachin Ganpat"]
-summary: 
+summary: I've been meaning to put up a technical website like this for a really long time. Time to make things happen.
 cover:
     image: "/images/egllogo.jpg" # image path/url
     alt: "Ess Gee Labs Logo" # alt text
