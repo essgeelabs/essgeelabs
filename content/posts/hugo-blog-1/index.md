@@ -10,7 +10,7 @@ tags:
 author: Sachin Ganpat
 summary: This is the first time I'm using Hugo so I made a little tutorial to help others.
 cover:
-    image: "images/Hugo-Logo.jpg" # image path/url
+    image: "images/Hugo-Logo.png" # image path/url
     alt: "Hugo Logo" # alt text
     # caption: "<text>" # display caption under cover
     relative: true # when using page bundles set this to true
@@ -199,7 +199,7 @@ Press Ctrl+C to stop
 
 Now in your favourite web browser go to `http://localhost:1313/` and you should see this:
 
-![Site Preview](C:\Users\sganp\Dropbox\Website\essgeelabs\content\posts\hugo-blog-1\images\01.png)
+![Site Preview](images/01.png)
 
 This page is regenerated for any change you make to the file. Try it.
 
@@ -267,11 +267,11 @@ I'm using Hugo to build my new website. **Hugo** is awesome.
 
 Let's see how it looks like using the Hugo server - `hugo server -D`
 
-![Home page preview](C:\Users\sganp\Dropbox\Website\essgeelabs\content\posts\hugo-blog-1\images\02.png)
+![Home page preview](images/02.png)
 
 When you click on the First Post, you get:
 
-![First Post Preview](C:\Users\sganp\Dropbox\Website\essgeelabs\content\posts\hugo-blog-1\images\03.png)
+![First Post Preview](images/03.png)
 
 You could see the tags that we added. Nice. 
 
