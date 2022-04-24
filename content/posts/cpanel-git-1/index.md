@@ -4,6 +4,7 @@ date: 2022-04-18T20:00:00-04:00
 draft: false
 categories:
   - DevOps
+  - Tutorial
 tags: 
   - devops
   - git
@@ -11,11 +12,11 @@ tags:
 author: Sachin Ganpat
 summary: Configuing cPanel Git Versioning for Web Site deployment
 cover:
-    image: "/images/egllogo.jpg" # image path/url
-    alt: "Ess Gee Labs Logo" # alt text
+    image: "images/cpanel-git.png" # image path/url
+    alt: "cPanel and Git" # alt text
     # caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    relative: true # when using page bundles set this to true
+    hidden: false # only hide on current single page
 editPost:
     URL: "https://github.com/essgeelabs/essgeelabs/tree/master/content"
     Text: "Suggest Changes" # edit text
@@ -46,41 +47,41 @@ And of course you need a web host that use cPanel with Git Version Control and a
 
 Log into your web host and in cPanel go to Security, and click on SSH Access. (In Bluehost you have to go to Advanced first.)
 
-![SSH Access](/images/cpanel-git-1/01.png)
+![SSH Access](images/01.png)
 
 Click on "Manage SSH Keys" 
 
-![Manage SSH Keys](/images/cpanel-git-1/02.png)
+![Manage SSH Keys](images/02.png)
 
 
 
 Then click on "Import Key".
 
-![Import Key](/images/cpanel-git-1/03.png)
+![Import Key](images/03.png)
 
 
 
 Specify a name for the key and paste in the *<u>public key only</u>*. Then click on "Import". Note that I can share my public key without fear of being compromised, which is the advantage of public-private key pairs.
 
-![Enter Key Information](/images/cpanel-git-1/04.png)
+![Enter Key Information](images/04.png)
 
 
 
 You should see the new key in the "Public Keys" list. Click on "Manage" in the line with the key. 
 
-![Manage the new key](/images/cpanel-git-1/05.png)
+![Manage the new key](images/05.png)
 
 
 
 Now click on "Authorize". You should get a message saying that they key has been authorised. 
 
-![Authorise the key](/images/cpanel-git-1/06.png)
+![Authorise the key](images/06.png)
 
 
 
 When you go back to the Public Key list you should see the "Authorization Status" of the key as "authorized". 
 
-![Key is authorised](/images/cpanel-git-1/07.png)
+![Key is authorised](images/07.png)
 
 
 
@@ -88,13 +89,13 @@ When you go back to the Public Key list you should see the "Authorization Status
 
 Back to cPanel, go to "Files" and "Git Version Control".
 
-![Git Version Control](/images/cpanel-git-1/08.png)
+![Git Version Control](images/08.png)
 
 
 
 We'll be creating a new repository. Click "Create".
 
-![Create Git repository](/images/cpanel-git-1/09.png)
+![Create Git repository](images/09.png)
 
 
 
@@ -106,7 +107,7 @@ Enter a name for the repository.
 
 Then click on "Create". 
 
-![Enter the repository details](/images/cpanel-git-1/10.png)
+![Enter the repository details](images/10.png)
 
 
 
@@ -114,7 +115,7 @@ You should see a message that it was created successfully along with some instru
 
 Your repository should now be listed into your list of repositories.
 
-![Repository added](/images/cpanel-git-1/11.png)
+![Repository added](images/11.png)
 
 
 
@@ -153,7 +154,7 @@ Once you have Git installed, you can clone the repository to your local computer
 
 You can copy the Clone URL from the cPanel Git Version Control list.
 
-![Copy Git URL](/images/cpanel-git-1/12.png)
+![Copy Git URL](images/12.png)
 
 
 
