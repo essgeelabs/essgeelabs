@@ -12,7 +12,7 @@ cover:
     image: "/images/egllogo.jpg" # image path/url
     alt: "Ess Gee Labs Logo" # alt text
     # caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
+    relative: true # when using page bundles set this to true
     hidden: false # only hide on current single page
 editPost:
     URL: "https://github.com/essgeelabs/essgeelabs/tree/master/content"
