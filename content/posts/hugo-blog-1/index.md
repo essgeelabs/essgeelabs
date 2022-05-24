@@ -4,6 +4,7 @@ date: 2022-04-23
 draft: false
 categories:
   - Tutorial
+  - Web Development
 tags: 
   - hugo
   - blog
