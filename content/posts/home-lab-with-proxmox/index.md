@@ -3,7 +3,7 @@ title: "Home Lab With Proxmox"
 date: 2022-05-24T17:43:32-04:00
 draft: false
 categories:
-  - Tutorial
+  - Tutorials
   - Virtualisation
 tags: 
   - proxmox

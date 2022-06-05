@@ -3,7 +3,7 @@ title: "Building a blog with Hugo"
 date: 2022-04-23
 draft: false
 categories:
-  - Tutorial
+  - Tutorials
   - Web Development
 tags: 
   - hugo
