@@ -10,7 +10,7 @@ tags:
   - linux
   - virtualisation
 author: Sachin Ganpat
-summary: 
+summary: In the last post I gave a brief overview of Proxmox, now we discuss creating virtual networks to allow VMs to communicate.
 cover:
     image: "images/proxmox-logo.png" # image path/url
     alt: "Proxmox Logo" # alt text
