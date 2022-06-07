@@ -5,9 +5,11 @@ draft: false
 categories:
   - Tutorials
   - Virtualisation
+  - Networking
 tags: 
   - proxmox
   - linux
+  - networking
   - virtualisation
 author: Sachin Ganpat
 summary: In the last post I gave a brief overview of Proxmox, now we discuss creating virtual networks to allow VMs to communicate.
@@ -38,6 +40,10 @@ My node has two onboard network adaptors seen in the below as `eno1` and `eno2`.
 Proxmox create bridged interfaces for its virtual networking. `vmbr0` is the one automatically created at setup when you were asked to provide an IP address for the node. If you edit that interface you will see that it's tied to `eno1` and you can change it here if you wish, including the IP address of the node.
 
 ![Linux bridge for management](images/02.png)
+
+
+
+## Trunk Ports
 
 I tend to leave the `vmbr0` interface separate for management and then configure the next physical interface to connect the virtual instances if they need to access the physical network. This is the `vmbr1` interface as shown below. I've also configured this as a trunk port by checking the "VLAN aware" box. This means that it will send and recognised 802.1q VLAN tags. You will need to connect that port to a switch port configured as an 802.1q trunk. 
 
