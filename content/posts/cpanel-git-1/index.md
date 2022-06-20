@@ -4,7 +4,7 @@ date: 2022-04-18T20:00:00-04:00
 draft: false
 categories:
   - DevOps
-  - Tutorial
+  - Tutorials
 tags: 
   - devops
   - git

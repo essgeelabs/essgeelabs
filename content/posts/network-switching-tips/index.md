@@ -4,6 +4,7 @@ date: 2022-05-08T21:11:16-04:00
 draft: false
 categories:
   - Tech Tips
+  - Networking
 tags: 
   - networking
 author: Sachin Ganpat

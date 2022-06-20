@@ -1,0 +1,30 @@
+# List of categories and tags to reference.
+
+categories:
+  - DevOps
+  - Tutorials
+  - Tech Tips
+  - Virtualisation
+  - Web Development
+  - Networking
+  - News
+  - Cybersecurity
+
+tags: 
+  - devops
+  - git
+  - web hosting
+  - windows
+  - proxmox
+  - lab
+  - virtualisation
+  - hugo
+  - blog
+  - networking
+  - linux
+  - news
+  - firewalls
+  - cybersecurity
+
+
+
