@@ -1,6 +1,6 @@
 ---
 title: "Build a Check Point Firewall Lab"
-date: 2022-06-19T22:00:00-04:00
+date: 2022-06-19T21:50:20-04:00
 draft: false
 categories:
   - Tutorials
