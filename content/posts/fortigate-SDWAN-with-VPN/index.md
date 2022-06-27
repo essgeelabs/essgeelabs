@@ -354,3 +354,83 @@ Click on the checkmark to confirm the selections. Then click "OK" to save.
 Repeat the process on the peer gateway at the other end, reversing the selector choices for local and remote.
 
 ![Confirming selector choice](images/38.png)
+
+
+
+### Set Source Interface for SD-WAN Members
+
+[One of the tutorials](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Configure-IPsec-VPN-with-SD-WAN/ta-p/209840) I read stated to set the source interface of the SD-WAN members as the internal interface of the firewall. This makes sense when the Tunnel Phase 2 selectors are set, as the SLA pings are sent out as the IP address of the outgoing interface, and will fail if that IP is not included in the selectors. 
+
+Setting the source IP as one within the Tunnel Selector will ensure that the source of the SLA pings are sent via the tunnel and not denied. Especially if you're monitoring the VPN tunnels.
+
+This could only be done via the command-line interface, which you can access by clicking on the CLI icon at the top right-hand corner of the Web GUI.
+
+![CLI Icon](images/40.png)
+
+At the command line, type:
+
+`config system sdwan`
+
+then:
+
+`config members`
+
+At the `(members)` prompt, type:
+
+`show full-configuration`
+
+You will get a display like:
+
+```
+FG1 (members) # show full
+config members
+    edit 1
+        set interface "FG1-FG2-WAN1"
+        set zone "virtual-wan-link"
+        set gateway 10.0.1.2
+        set source 0.0.0.0
+        set gateway6 ::
+        set source6 ::
+        set cost 0
+        set priority 0
+        set volume-ratio 1
+        set status enable
+        set comment ''
+    next
+    edit 2
+        set interface "FG1-FG2-WAN2"
+        set zone "virtual-wan-link"
+        set gateway 10.0.2.2
+        set source 0.0.0.0
+        set gateway6 ::
+        set source6 ::
+        set cost 0
+        set priority 0
+        set volume-ratio 1
+        set status enable
+        set comment ''
+    next
+end
+
+FG1 (members) # 
+```
+
+Ensure you have identified the two members to edit. In this case they are `1` and `2`. In my case, the config looked like this:
+
+```
+config system sdwan
+    config members
+        edit 1
+            set source 192.168.192.128
+        next
+        edit 2
+            set source 192.168.192.128
+        next
+    end
+end
+```
+
+Now the performance SLAs should be up. 
+
+
+
