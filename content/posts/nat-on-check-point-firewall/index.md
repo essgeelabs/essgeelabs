@@ -12,7 +12,7 @@ tags:
   - firewalls
   - cybersecurity
 author: Sachin Ganpat
-summary: In this final part of the basic setup of a Check Point firewall I walk though NAT configurations.
+summary: In this final part of the basic setup of a Check Point firewall, I walk through NAT configurations.
 cover:
     image: "images/cp_logo.png" # image path/url
     alt: "Check Point Logo" # alt text
