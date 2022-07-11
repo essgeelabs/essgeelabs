@@ -86,7 +86,7 @@ params:
     - name: linkedin
       url: 'https://www.linkedin.com/in/sganpat/'
     - name: github
-      url: 'https://github.com/essgeelabs'
+      url: 'https://github.com/sganpat/'
     - name: RsS
       url: 'index.xml'
   assets:

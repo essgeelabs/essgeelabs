@@ -194,6 +194,10 @@ You should also note that these settings don't keep with upgrades, so you'll nee
 
 
 
+![Merge manual proxy ARP](images/52.png)
+
+
+
 Once the proxy ARP is setup, we can try to connect via SSH and it should work now. You may need to install your policy if it doesn't work, otherwise, recheck your settings.
 
 ![SSH works now](images/20.png)
